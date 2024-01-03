@@ -35,7 +35,7 @@ extension DurationExtension on Duration {
   }
 }
 
-extension DateTimeExtestion on DateTime {
+extension DateTimeExtension on DateTime {
   String get timeOnlyFormat {
     return DateFormat('hh:mm a').format(this);
   }
@@ -56,4 +56,8 @@ extension DateTimeExtestion on DateTime {
   String get normatFormat {
     return DateFormat('yyyy/M/d').format(this);
   }
+}
+
+extension StringExtension on String {
+  String get debug => "${substring(0, length ~/ 2.8)}...";
 }

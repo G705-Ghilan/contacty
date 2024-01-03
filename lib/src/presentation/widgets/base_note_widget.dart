@@ -11,6 +11,7 @@ class BaseNoteWidget extends StatelessWidget {
     required this.containerColor,
     required this.textColor,
   });
+  
   final String title;
   final String subtitle;
   final String label;
